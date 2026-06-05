@@ -29,7 +29,7 @@ library(stringr)
 # ============================================================
 # 1. READ DATA
 # ============================================================
-path <- "C:/Users/trong/OneDrive/HUYNHTT/Thesis 2025/Paper/SSHO/SET FPT/DIB/dataset_SET_student_evaluation.xlsx"
+path <- "dataset_SET_student_evaluation.xlsx"
 
 df <- read_excel(path)
 
