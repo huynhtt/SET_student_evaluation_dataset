@@ -1,6 +1,6 @@
 1. Dataset Title
 
-Dataset on student engagement in teaching evaluations among university students in Vietnam.
+Dataset on student engagement in teaching evaluations at a private university in Vietnam.
 
 2. Dataset Description
 
@@ -121,7 +121,7 @@ Researchers are encouraged to reuse the dataset for replication studies, methodo
 
 9. Related Research Article
 
-This dataset accompanies the research article: Student Engagement in Teaching Evaluations: How Organizational Identification and Institutional Trust Shape Constructive Feedback
+At the time of this release, no related research article has been formally published. The dataset is intended to support future research on student engagement in Student Evaluation of Teaching.
 
 10. Contact
 
