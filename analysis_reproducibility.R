@@ -510,12 +510,12 @@ cat("\n================ TABLE 4B: EXPLAINED VARIANCE (R-SQUARE) ================
 print(table4_r2)
 
 # ============================================================
-# 22. TABLE 5
+# 22. Additional_Robustness_Checks
 # Robustness checks
 # ============================================================
 table5 <- robustness_table
 
-cat("\n================ TABLE 5: ROBUSTNESS CHECKS ================\n")
+cat("\n================: ROBUSTNESS CHECKS ================\n")
 print(table5)
 
 # ============================================================
@@ -591,7 +591,7 @@ cat("- Report R-squared values for endogenous constructs.\n")
 cat("- Report SEM fit indices.\n")
 
 cat("\n4.4 Robustness and common method bias checks\n")
-cat("Use Table 5 and the single-factor test.\n")
+cat("Use and the single-factor test.\n")
 cat("- Mention the single-factor model fit was poor, suggesting CMB is unlikely to dominate.\n")
 cat("- Mention the sensitivity analysis excluding possible straight-liners did not materially change the overall interpretation.\n")
 cat("============================================================\n")
@@ -640,7 +640,7 @@ fitMeasures(fit_cfa_5f, c("cfi","tli","rmsea","srmr"))
 
 
 # ============================================================
-# FIGURE 2: SAMPLE PROFILE
+# FIGURE 1: SAMPLE PROFILE
 # Two bar charts: Gender and Year of study
 # ============================================================
 
