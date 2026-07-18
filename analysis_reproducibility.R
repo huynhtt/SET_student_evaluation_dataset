@@ -654,6 +654,9 @@ library(patchwork)
 
 # ------------------------------------------------------------
 # 1. Data
+# FIGURE 1: SAMPLE PROFILE
+# Two bar charts: Gender and Year of study
+# ============================================================
 # ------------------------------------------------------------
 gender_df <- data.frame(
   Gender = c("Male", "Female"),
@@ -713,15 +716,15 @@ p2 <- ggplot(year_df, aes(x = Year, y = Count)) +
 # ------------------------------------------------------------
 # 4. Combine and export
 # ------------------------------------------------------------
-fig2 <- p1 + p2 + plot_annotation(
+fig1 <- p1 + p2 + plot_annotation(
   title = ""
 )
 
-print(fig2)
+print(fig1)
 
 ggsave(
-  filename = "Figure_2_sample_profile.png",
-  plot = fig2,
+  filename = "Figure__sample_profile.png",
+  plot = fig1,
   width = 12,
   height = 6,
   dpi = 300
