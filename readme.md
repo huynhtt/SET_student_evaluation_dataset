@@ -75,26 +75,32 @@ The original questionnaire contained 30 survey items across six conceptual domai
 
 The complete instrument is provided in the file: questionnaire_30items.pdf
 
-6. Analysis Code
+6. Analysis Code and Reproducibility
 
-The file: analysis_reproducibility.R
-
-contains the R code used for data preparation and statistical analysis, including:
+The file `analysis_reproducibility.R` contains the R code used for data preparation and statistical analysis, including:
 
 - Data import and preprocessing
-
 - Descriptive statistics
-
+- Reliability assessment
 - Confirmatory factor analysis (CFA)
-
+- Composite reliability and average variance extracted
+- Fornell–Larcker and HTMT assessments
 - Structural equation modeling (SEM)
+- Bootstrap mediation analysis
+- Alternative measurement model assessment
+- Common method bias assessment
+- Sensitivity analysis excluding potential straight-line responses
+- Generation of the respondent demographic figure
+- Export of statistical results to Microsoft Excel
 
-- Robustness checks
+The original dataset contains 30 survey items across six conceptual domains. The principal measurement analysis retains 15 indicators representing five validated constructs.
 
-The analysis was conducted using the R statistical environment, primarily with the lavaan package.
+### File paths
 
-The dataset contains 30 survey items across six conceptual domains. For the associated SEM analysis, a reduced 15-item measurement model
-was retained after reliability and validity assessment.
+The R script uses a relative file path:
+
+```r
+path <- "dataset_SET_student_evaluation.xlsx"
 
 7. Ethical Considerations
 
