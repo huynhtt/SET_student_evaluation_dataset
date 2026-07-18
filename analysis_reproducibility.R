@@ -729,3 +729,13 @@ ggsave(
   height = 6,
   dpi = 300
 )
+
+
+# ============================================================
+# 26. COMPUTATIONAL ENVIRONMENT
+# ============================================================
+
+session_info <- capture.output(sessionInfo())
+writeLines(session_info, "sessionInfo.txt")
+
+cat("\nComputational environment exported to: sessionInfo.txt\n")
