@@ -510,12 +510,12 @@ cat("\n================ TABLE 4B: EXPLAINED VARIANCE (R-SQUARE) ================
 print(table4_r2)
 
 # ============================================================
-# 22. TABLE 5
+# 22. Additional_Robustness_Checks
 # Robustness checks
 # ============================================================
 table5 <- robustness_table
 
-cat("\n================ TABLE 5: ROBUSTNESS CHECKS ================\n")
+cat("\n================: ROBUSTNESS CHECKS ================\n")
 print(table5)
 
 # ============================================================
@@ -591,7 +591,7 @@ cat("- Report R-squared values for endogenous constructs.\n")
 cat("- Report SEM fit indices.\n")
 
 cat("\n4.4 Robustness and common method bias checks\n")
-cat("Use Table 5 and the single-factor test.\n")
+cat("Use and the single-factor test.\n")
 cat("- Mention the single-factor model fit was poor, suggesting CMB is unlikely to dominate.\n")
 cat("- Mention the sensitivity analysis excluding possible straight-liners did not materially change the overall interpretation.\n")
 cat("============================================================\n")
@@ -640,7 +640,7 @@ fitMeasures(fit_cfa_5f, c("cfi","tli","rmsea","srmr"))
 
 
 # ============================================================
-# FIGURE 2: SAMPLE PROFILE
+# FIGURE 1: SAMPLE PROFILE
 # Two bar charts: Gender and Year of study
 # ============================================================
 
@@ -654,6 +654,9 @@ library(patchwork)
 
 # ------------------------------------------------------------
 # 1. Data
+# FIGURE 1: SAMPLE PROFILE
+# Two bar charts: Gender and Year of study
+# ============================================================
 # ------------------------------------------------------------
 gender_df <- data.frame(
   Gender = c("Male", "Female"),
@@ -713,16 +716,26 @@ p2 <- ggplot(year_df, aes(x = Year, y = Count)) +
 # ------------------------------------------------------------
 # 4. Combine and export
 # ------------------------------------------------------------
-fig2 <- p1 + p2 + plot_annotation(
+fig1 <- p1 + p2 + plot_annotation(
   title = ""
 )
 
-print(fig2)
+print(fig1)
 
 ggsave(
-  filename = "Figure_2_sample_profile.png",
-  plot = fig2,
+  filename = "Figure_1_sample_profile.png",
+  plot = fig1,
   width = 12,
   height = 6,
   dpi = 300
 )
+
+
+# ============================================================
+# 26. COMPUTATIONAL ENVIRONMENT
+# ============================================================
+
+session_info <- capture.output(sessionInfo())
+writeLines(session_info, "sessionInfo.txt")
+
+cat("\nComputational environment exported to: sessionInfo.txt\n")
