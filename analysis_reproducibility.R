@@ -723,7 +723,7 @@ fig1 <- p1 + p2 + plot_annotation(
 print(fig1)
 
 ggsave(
-  filename = "Figure__sample_profile.png",
+  filename = "Figure_1_sample_profile.png",
   plot = fig1,
   width = 12,
   height = 6,
